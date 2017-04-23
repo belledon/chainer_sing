@@ -8,7 +8,6 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     echo "Arguments received: $*"
     exec /usr/bin/python3 "$@"
 
-
 %post
     echo "Hello from inside the container"
     export LANG=C.UTF-8
