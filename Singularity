@@ -28,7 +28,9 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     apt-get -y install xvfb
     apt-get -y install locales
     apt-get -y install python3-pip
-    echo "Installing python3 packages"
+
+    #echo "Installing python3 packages"
+    
     python3 -m pip install --upgrade pip
     python3 -m pip install multiprocess
     python3 -m pip install joblib
@@ -41,6 +43,6 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     python3 -m pip install h5py
     python3 -m pip install chainer
     python3 -m pip install trimesh
-    apt-get -y install python3-tk
+    # apt-get -y install python3-tk
     #---------- All thats needed for py.neural -----------#
 
