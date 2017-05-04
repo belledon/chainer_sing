@@ -34,12 +34,12 @@ From: chainer/chainer:v1.23.0-python3
     #echo "Installing python3 packages"
     
     python3 -m pip install --upgrade pip
-    python3 -m pip install  scipy \
-                            numpy \
-                            h5py \
-                            chainer \
-                            pillow
-
+    python3 -m pip install scipy 
+    python3 -m pip install numpy
+    python3 -m pip install h5py
+    python3 -m pip install pillow
+    python3 -m pip install chainer
+    
     apt-get clean
 
     NV_DRIVER_VERSION=375.20      # <---- EDIT: CHANGE THIS FOR YOUR SYSTEM
