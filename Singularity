@@ -86,5 +86,5 @@ export PATH LD_LIBRARY_PATH
 
 %test
     # Ensure that Chainer can be imported
-    /usr/bin/python -c "import chainer"
+    /usr/bin/python3 -c "import chainer"
     
