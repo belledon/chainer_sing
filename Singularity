@@ -18,8 +18,8 @@ From: chainer/chainer:v1.23.0-python3
     apt-get -y update && apt-get -y install wget
    # apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates libglib2.0-0 libxext6 libsm6 libxrender1 git
 
-    mkdir /om
-    mkdir /cm
+    #mkdir /om
+    #mkdir /cm
 
 
     echo "Apt-getting packages"
@@ -27,8 +27,6 @@ From: chainer/chainer:v1.23.0-python3
     apt-get -y install cmake
     apt-get update
     apt-get -y install g++
-    apt-get -y install vim
-    apt-get -y install xvfb
     apt-get -y install python3-pip
 
     #echo "Installing python3 packages"
