@@ -1,5 +1,5 @@
 BootStrap: docker
-From: chainer/chainer:v1.23.0-python3
+From: chainer/chainer:latest-python3
 
 %runscript
     echo "SINGULARITY RUNSCRIPT"
@@ -18,8 +18,8 @@ From: chainer/chainer:v1.23.0-python3
     apt-get -y update && apt-get -y install wget
    # apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates libglib2.0-0 libxext6 libsm6 libxrender1 git
 
-    #mkdir /om
-    #mkdir /cm
+    mkdir /om
+    mkdir /cm
 
 
     echo "Apt-getting packages"
@@ -40,7 +40,7 @@ From: chainer/chainer:v1.23.0-python3
     
     apt-get clean
 
-    NV_DRIVER_VERSION=375.20      # <---- EDIT: CHANGE THIS FOR YOUR SYSTEM
+    NV_DRIVER_VERSION=375.20     # <---- EDIT: CHANGE THIS FOR YOUR SYSTEM
     NV_DRIVER_FILE=NVIDIA-Linux-x86_64-${NV_DRIVER_VERSION}.run
 
     export PATH=/usr/local/cuda/bin:$PATH
