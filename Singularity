@@ -38,10 +38,11 @@ From: chainer/chainer:latest-python3
     python3 -m pip install h5py
     python3 -m pip install pillow
     python3 -m pip install transforms3d
-    python3 -m pip install myavi
+   
     python3 -m pip install -U setuptools
     python3 -m pip install cupy
     python3 -m pip install chainer
+    python3 -m pip install myavi
     
     apt-get clean
 
