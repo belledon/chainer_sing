@@ -30,16 +30,18 @@ From: chainer/chainer:latest-python3
     apt-get -y install g++
     apt-get -y install python3-pip
 
-    #echo "Installing python3 packages"
+    echo "Installing python3 packages"
     
     python3 -m pip install --upgrade pip
     python3 -m pip install scipy 
     python3 -m pip install numpy
     python3 -m pip install h5py
     python3 -m pip install pillow
-    python3 -m pip install chainer
     python3 -m pip install transforms3d
     python3 -m pip install myavi
+    python3 -m pip install -U setuptools
+    python3 -m pip install cupy
+    python3 -m pip install chainer
     
     apt-get clean
 
