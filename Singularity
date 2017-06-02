@@ -25,12 +25,12 @@ From: chainer/chainer:v2.0.0-python3
     echo "Apt-getting packages"
     apt-get -y install git
     apt-get -y install cmake
-    apt-get update
     apt-get -y install g++
     apt-get -y install python3-pip
-
-    echo "Installing python3 packages"
+    apt-get update
+    apt-get clean
     
+    echo "Installing python3 packages"
     python3 -m pip install --upgrade pip
     python3 -m pip install scipy 
     python3 -m pip install numpy
@@ -38,13 +38,11 @@ From: chainer/chainer:v2.0.0-python3
     python3 -m pip install pillow
     python3 -m pip install transforms3d
    
-    python3 -m pip install -U setuptools
     python3 -m cupy --no-cache-dir -vvvv
     python3 -m pip install chainer
     python3 -m pip install myavi
     
-    apt-get clean
-
+    echo "Installing NVidia driver"
     NV_DRIVER_VERSION=375.20     # <---- EDIT: CHANGE THIS FOR YOUR SYSTEM
     NV_DRIVER_FILE=NVIDIA-Linux-x86_64-${NV_DRIVER_VERSION}.run
 
