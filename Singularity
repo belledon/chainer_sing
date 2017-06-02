@@ -1,6 +1,5 @@
 BootStrap: docker
-From: chainer/chainer:latest-python3
-
+From: chainer/chainer:v2.0.0-python3
 
 %runscript
     echo "SINGULARITY RUNSCRIPT"
@@ -40,7 +39,7 @@ From: chainer/chainer:latest-python3
     python3 -m pip install transforms3d
    
     python3 -m pip install -U setuptools
-    python3 -m pip install cupy
+    python3 -m cupy --no-cache-dir -vvvv
     python3 -m pip install chainer
     python3 -m pip install myavi
     
