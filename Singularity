@@ -6,7 +6,6 @@ From: chainer/chainer:latest-python3
     echo "Arguments received: $*"
     exec /usr/bin/python3 "$@"
 
-
 %post
     echo "Hello from inside the container"
 
