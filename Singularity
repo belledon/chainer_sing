@@ -21,7 +21,6 @@ From: chainer/chainer:latest-python3
     mkdir /om
     mkdir /cm
 
-
     echo "Apt-getting packages"
     apt-get -y install git
     apt-get -y install cmake
