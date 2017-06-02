@@ -1,6 +1,7 @@
 BootStrap: docker
 From: chainer/chainer:latest-python3
 
+
 %runscript
     echo "SINGULARITY RUNSCRIPT"
     echo "Arguments received: $*"
